@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yousef Khalifa | Web Developer & Designer</title>
+    <meta name="description" content="Professional Web Developer & Designer creating modern, responsive websites and applications.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+
+<!-- Loader -->
+<div class="loader-wrapper">
+    <div class="loader"></div>
+</div>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg fixed-top main-nav">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="#home">Yousef Khalifa<span class="brand-dot">.</span></a>
+
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="#work">My Work</a></li>
+                <li class="nav-item"><a class="btn btn-primary ms-3 contact-btn" href="#contact">Contact Me</a></li>
+                <li class="nav-item">
+                    <button class="btn theme-toggle" id="themeToggle">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section id="home" class="hero-section">
+    <div class="container">
+        <div class="row align-items-center">
+
+            <div class="col-lg-6">
+                <h1 class="hero-title">Hi, I'm <span class="highlight">Yousef Khalifa</span><br>Web Developer & Designer</h1>
+                <p class="hero-desc">
+                    I build beautiful, modern, and high-performance websites that elevate businesses and deliver powerful digital experiences. Passionate about creating innovative solutions that make an impact.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#work" class="btn btn-primary">
+                        <i class="fas fa-eye me-2"></i>View My Work
+                    </a>
+                    <a href="#contact" class="btn btn-outline-primary">
+                        <i class="fas fa-paper-plane me-2"></i>Contact Me
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-lg-6 text-center">
+                <div class="hero-img-container">
+                    <img src="images/yousefImg.jpeg" class="hero-img img-fluid" alt="Yousef Khalifa - Web Developer">
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- About -->
+<section id="about" class="section">
+    <div class="container text-center">
+        <h2 class="section-title">About Me</h2>
+        <p class="section-desc">
+            I'm a passionate web developer with expertise in creating modern, responsive, and user-friendly web applications. With a focus on clean code and innovative solutions.
+        </p>
+
+        <div class="row mt-5">
+
+            <div class="col-md-4 mb-4">
+                <div class="feature-box">
+                    <i class="fas fa-lightbulb feature-icon"></i>
+                    <h4>Creative Thinking</h4>
+                    <p>Transforming ideas into attractive and effective solutions that deliver measurable results and enhance user engagement.</p>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="feature-box">
+                    <i class="fas fa-code feature-icon"></i>
+                    <h4>Clean Development</h4>
+                    <p>Writing clean, efficient, and maintainable code following modern best practices and industry standards.</p>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="feature-box">
+                    <i class="fas fa-heart feature-icon"></i>
+                    <h4>Detail Oriented</h4>
+                    <p>Meticulous attention to detail ensuring every element contributes to an exceptional user experience.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Services -->
+<section id="services" class="section bg-light">
+    <div class="container text-center">
+        <h2 class="section-title">My Services</h2>
+        <p class="section-desc">Comprehensive digital services designed to help businesses grow and succeed online.</p>
+
+        <div class="row mt-5">
+
+            <div class="col-md-4 mb-4">
+                <div class="service-box">
+                    <i class="fas fa-laptop-code feature-icon"></i>
+                    <h4>Web Development</h4>
+                    <p>Modern, responsive websites built with cutting-edge technologies and clean, intuitive user interfaces.</p>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="service-box">
+                    <i class="fas fa-paint-brush feature-icon"></i>
+                    <h4>UI/UX Design</h4>
+                    <p>Professional, user-friendly interfaces designed to enhance engagement and drive conversions.</p>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="service-box">
+                    <i class="fas fa-mobile-alt feature-icon"></i>
+                    <h4>Mobile Apps</h4>
+                    <p>Responsive mobile applications with seamless user experiences across all devices and platforms.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- My Work -->
+<section id="work" class="section">
+    <div class="container text-center">
+        <h2 class="section-title">My Work</h2>
+        <p class="section-desc">A curated selection of my recent projects showcasing my skills and expertise.</p>
+
+        <div class="row mt-5">
+
+            <!-- Weather App -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="work-card">
+                    <img src="images/pexels-viktor-svabik-1268767731-24739822.jpg" class="work-img" alt="Weather Application">
+                    <div class="work-info">
+                        <h4>Weather App</h4>
+                        <p>Real-time weather application powered by APIs with dynamic updates and intuitive interface.</p>
+                        <a href="https://yousefkhalifa284.github.io/Weather/" target="_blank">
+                            Live Demo <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Yummy Menu -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="work-card">
+                    <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=800" class="work-img" alt="Restaurant Menu">
+                    <div class="work-info">
+                        <h4>Yummy Menu</h4>
+                        <p>Restaurant UI featuring dynamic filtering and interactive content management.</p>
+                        <a href="https://yousefkhalifa284.github.io/yummay/" target="_blank">
+                            Live Demo <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Daniels Portfolio -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="work-card">
+                    <img src="images/bg.jpg" class="work-img" alt="Portfolio Design">
+                    <div class="work-info">
+                        <h4>Daniels Portfolio</h4>
+                        <p>Modern animated portfolio with smooth transitions and engaging visual elements.</p>
+                        <a href="https://yousefkhalifa284.github.io/daniels/" target="_blank">
+                            Live Demo <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Contact -->
+<section id="contact" class="section">
+    <div class="container text-center">
+        <h2 class="section-title">Contact Me</h2>
+        <p class="section-desc">Let's discuss your next project and create something amazing together.</p>
+
+        <div class="row mt-5 justify-content-center">
+            <div class="col-md-5 mb-4">
+                <div class="contact-box">
+                    <i class="fas fa-envelope"></i>
+                    <h4>Email</h4>
+                    <p>yousefkhalifa284@gmail.com</p>
+                    <a href="mailto:yousefkhalifa284@gmail.com" class="btn btn-outline-primary mt-3">Send Email</a>
+                </div>
+            </div>
+
+            <div class="col-md-5 mb-4">
+                <div class="contact-box">
+                    <i class="fas fa-phone"></i>
+                    <h4>Phone</h4>
+                    <p>01027233221</p>
+                    <a href="tel:+966551234567" class="btn btn-outline-primary mt-3">Call Now</a>
+                </div>
+            </div>
+        </div>
+
+        <a href="mailto:yousefkhalifa284@gmail.com" class="btn btn-primary mt-5 px-5 py-3">
+            <i class="fas fa-rocket me-2"></i>Start Your Project
+        </a>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer text-center">
+    <div class="container">
+        <p class="mb-4">© 2025 Yousef Khalifa — All Rights Reserved.</p>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/yousef-khalifa-284" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/yousefkhalifa284" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+</footer>
+
+<!-- Back to Top -->
+<button class="back-to-top" id="backToTop">
+    <i class="fas fa-arrow-up"></i>
+</button>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="main.js"></script>
+
+</body>
+</html>
