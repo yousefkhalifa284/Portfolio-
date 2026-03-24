@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yousef Khalifa | Web Developer & Designer</title>
     <meta name="description" content="Professional Web Developer & Designer creating modern, responsive websites and applications.">
-    
+
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-    
+
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
@@ -32,94 +32,116 @@
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg fixed-top main-nav">
     <div class="container">
-        <a class="navbar-brand fw-bold" href="#home">Yousef Khalifa<span class="brand-dot">.</span></a>
+        <a class="navbar-brand fw-bold" href="#home">
+            <span class="brand-text">Yousef Khalifah</span>
+            <span class="brand-dot">.</span>
+            <span class="brand-glow"></span>
+        </a>
 
         <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
-            <i class="fas fa-bars"></i>
+            <div class="hamburger">
+                <span></span><span></span><span></span>
+            </div>
         </button>
 
         <div class="collapse navbar-collapse justify-content-end" id="navMenu">
-            <ul class="navbar-nav">
-                <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-                <li class="nav-item"><a class="nav-link" href="#work">My Work</a></li>
-                <li class="nav-item"><a class="btn btn-primary ms-3 contact-btn" href="#contact">Contact Me</a></li>
-                <li class="nav-item">
-                    <button class="btn theme-toggle" id="themeToggle">
-                        <i class="fas fa-moon"></i>
-                    </button>
-                </li>
+            <ul class="navbar-nav align-items-center">
+                <li class="nav-item"><a class="nav-link" href="#home"><span class="nav-text">Home</span><span class="nav-indicator"></span></a></li>
+                <li class="nav-item"><a class="nav-link" href="#about"><span class="nav-text">About</span><span class="nav-indicator"></span></a></li>
+                <li class="nav-item"><a class="nav-link" href="#services"><span class="nav-text">Services</span><span class="nav-indicator"></span></a></li>
+                <li class="nav-item"><a class="nav-link" href="#skills"><span class="nav-text">Skills</span><span class="nav-indicator"></span></a></li>
+                <li class="nav-item"><a class="nav-link" href="#work"><span class="nav-text">My Work</span><span class="nav-indicator"></span></a></li>
+                <li class="nav-item"><a class="btn contact-btn" href="#contact"><span class="btn-text">Contact Me</span><span class="btn-icon"><i class="fas fa-paper-plane"></i></span></a></li>
+                <li class="nav-item"><button class="btn theme-toggle" id="themeToggle"><i class="fas fa-sun"></i><i class="fas fa-moon"></i><span class="toggle-glow"></span></button></li>
             </ul>
         </div>
     </div>
+    <div class="scroll-progress"><div class="scroll-bar"></div></div>
 </nav>
 
 <!-- Hero Section -->
 <section id="home" class="hero-section">
     <div class="container">
         <div class="row align-items-center">
-
-            <div class="col-lg-6">
-                <h1 class="hero-title">Hi, I'm <span class="highlight">Yousef Khalifa</span><br>Web Developer & Designer</h1>
+            <div class="col-lg-6" data-aos="fade-right">
+                <h1 class="hero-title">
+                    Hi, I'm <span class="highlight">Yousef Khalifah</span>
+                    <br>
+                    <span style="font-size: 0.8em; opacity: 0.8;">Front End Developer</span>
+                </h1>
                 <p class="hero-desc">
-                    I build beautiful, modern, and high-performance websites that elevate businesses and deliver powerful digital experiences. Passionate about creating innovative solutions that make an impact.
+                    I build beautiful, modern, and high-performance websites that elevate businesses and deliver powerful digital experiences.
                 </p>
 
                 <div class="hero-buttons">
                     <a href="#work" class="btn btn-primary">
-                        <i class="fas fa-eye me-2"></i>View My Work
+                        <span>View My Work</span>
+                        <i class="fas fa-arrow-right"></i>
                     </a>
                     <a href="#contact" class="btn btn-outline-primary">
-                        <i class="fas fa-paper-plane me-2"></i>Contact Me
+                        <span>Contact Me</span>
+                        <i class="fas fa-envelope"></i>
                     </a>
                 </div>
             </div>
 
-            <div class="col-lg-6 text-center">
+            <div class="col-lg-6 text-center d-none d-lg-block" data-aos="zoom-in">
                 <div class="hero-img-container">
-                    <img src="images/yousefImg.jpeg" class="hero-img img-fluid" alt="Yousef Khalifa - Web Developer">
+                    <img src="images/WhatsApp Image 2026-03-24 at 12.28.51 PM.jpeg" class="hero-img img-fluid" alt="Yousef Khalifa">
                 </div>
             </div>
-
         </div>
     </div>
 </section>
-
 <!-- About -->
 <section id="about" class="section">
     <div class="container text-center">
-        <h2 class="section-title">About Me</h2>
-        <p class="section-desc">
+        <h2 class="section-title" data-text="About Me">About Me</h2>
+
+        <p class="section-desc animate-text">
             I'm a passionate web developer with expertise in creating modern, responsive, and user-friendly web applications. With a focus on clean code and innovative solutions.
         </p>
 
         <div class="row mt-5">
-
             <div class="col-md-4 mb-4">
-                <div class="feature-box">
-                    <i class="fas fa-lightbulb feature-icon"></i>
+                <div class="feature-box" data-tilt>
+                    <div class="feature-icon-wrapper">
+                        <i class="fas fa-lightbulb feature-icon"></i>
+                        <div class="icon-glow"></div>
+                    </div>
                     <h4>Creative Thinking</h4>
                     <p>Transforming ideas into attractive and effective solutions that deliver measurable results and enhance user engagement.</p>
+                    <div class="feature-overlay"></div>
                 </div>
             </div>
 
             <div class="col-md-4 mb-4">
-                <div class="feature-box">
-                    <i class="fas fa-code feature-icon"></i>
+                <div class="feature-box" data-tilt>
+                    <div class="feature-icon-wrapper">
+                        <i class="fas fa-code feature-icon"></i>
+                        <div class="icon-glow"></div>
+                    </div>
                     <h4>Clean Development</h4>
                     <p>Writing clean, efficient, and maintainable code following modern best practices and industry standards.</p>
+                    <div class="feature-overlay"></div>
                 </div>
             </div>
 
             <div class="col-md-4 mb-4">
-                <div class="feature-box">
-                    <i class="fas fa-heart feature-icon"></i>
+                <div class="feature-box" data-tilt>
+                    <div class="feature-icon-wrapper">
+                        <i class="fas fa-heart feature-icon"></i>
+                        <div class="icon-glow"></div>
+                    </div>
                     <h4>Detail Oriented</h4>
                     <p>Meticulous attention to detail ensuring every element contributes to an exceptional user experience.</p>
+                    <div class="feature-overlay"></div>
                 </div>
             </div>
+        </div>
 
+        <div class="mt-5">
+            <a href="#contact" class="btn-cta">Let's Work Together</a>
         </div>
     </div>
 </section>
@@ -127,35 +149,290 @@
 <!-- Services -->
 <section id="services" class="section bg-light">
     <div class="container text-center">
-        <h2 class="section-title">My Services</h2>
-        <p class="section-desc">Comprehensive digital services designed to help businesses grow and succeed online.</p>
+        <!-- عنوان مع تأثير كتابة -->
+        <h2 class="section-title" data-text="My Services">My Services</h2>
+
+        <!-- وصف مع تأثير ظهور -->
+        <p class="section-desc animate-text">
+            Comprehensive digital services designed to help businesses grow and succeed online.
+        </p>
 
         <div class="row mt-5">
-
+            <!-- بطاقة خدمة 1 -->
             <div class="col-md-4 mb-4">
-                <div class="service-box">
-                    <i class="fas fa-laptop-code feature-icon"></i>
+                <div class="service-card" data-tilt>
+                    <div class="service-icon-wrapper">
+                        <div class="icon-circle">
+                            <i class="fas fa-laptop-code service-icon"></i>
+                        </div>
+                        <div class="icon-glow"></div>
+                    </div>
                     <h4>Web Development</h4>
                     <p>Modern, responsive websites built with cutting-edge technologies and clean, intuitive user interfaces.</p>
+                    <div class="service-stats">
+                        <span class="stat-badge">HTML5</span>
+                        <span class="stat-badge">CSS3</span>
+                        <span class="stat-badge">Angular</span>
+                    </div>
+                    <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    <div class="service-overlay"></div>
                 </div>
             </div>
 
+            <!-- بطاقة خدمة 2 -->
             <div class="col-md-4 mb-4">
-                <div class="service-box">
-                    <i class="fas fa-paint-brush feature-icon"></i>
+                <div class="service-card" data-tilt>
+                    <div class="service-icon-wrapper">
+                        <div class="icon-circle">
+                            <i class="fas fa-paint-brush service-icon"></i>
+                        </div>
+                        <div class="icon-glow"></div>
+                    </div>
                     <h4>UI/UX Design</h4>
                     <p>Professional, user-friendly interfaces designed to enhance engagement and drive conversions.</p>
+                    <div class="service-stats">
+                        <span class="stat-badge">Figma</span>
+                        <span class="stat-badge">Sketch</span>
+                        <span class="stat-badge">Adobe XD</span>
+                    </div>
+                    <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    <div class="service-overlay"></div>
                 </div>
             </div>
 
+            <!-- بطاقة خدمة 3 -->
             <div class="col-md-4 mb-4">
-                <div class="service-box">
-                    <i class="fas fa-mobile-alt feature-icon"></i>
+                <div class="service-card" data-tilt>
+                    <div class="service-icon-wrapper">
+                        <div class="icon-circle">
+                            <i class="fas fa-mobile-alt service-icon"></i>
+                        </div>
+                        <div class="icon-glow"></div>
+                    </div>
                     <h4>Mobile Apps</h4>
                     <p>Responsive mobile applications with seamless user experiences across all devices and platforms.</p>
+                    <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    <div class="service-overlay"></div>
                 </div>
             </div>
+        </div>
 
+    </div>
+</section>
+
+<!-- Skills -->
+<section id="skills" class="section">
+    <div class="container text-center">
+        <!-- عنوان مع تأثير كتابة -->
+        <h2 class="section-title" data-text="Technical Skills">Technical Skills</h2>
+
+        <!-- وصف قصير مع تأثير ظهور -->
+        <p class="section-desc animate-text">
+            Technologies and tools I work with to bring ideas to life
+        </p>
+
+        <!-- إحصائيات سريعة -->
+        <div class="skills-stats">
+            <div class="skill-stat-item">
+                <span class="skill-stat-number">3+</span>
+                <span class="skill-stat-label">Years Experience</span>
+            </div>
+            <div class="skill-stat-item">
+                <span class="skill-stat-number">50+</span>
+                <span class="skill-stat-label">Projects</span>
+            </div>
+            <div class="skill-stat-item">
+                <span class="skill-stat-number">24/7</span>
+                <span class="skill-stat-label">Support</span>
+            </div>
+        </div>
+
+        <!-- مهارات متقدمة مع أشرطة التقدم -->
+        <div class="advanced-skills">
+            <h3 class="skills-subtitle">Core Competencies</h3>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="progress-skill">
+                        <div class="skill-info">
+                            <span>Frontend Development</span>
+                            <span class="skill-percent">95%</span>
+                        </div>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar-fill" data-width="95"></div>
+                        </div>
+                    </div>
+                    <div class="progress-skill">
+                        <div class="skill-info">
+                            <span>UI/UX Design</span>
+                            <span class="skill-percent">85%</span>
+                        </div>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar-fill" data-width="85"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="progress-skill">
+                        <div class="skill-info">
+                            <span>Responsive Design</span>
+                            <span class="skill-percent">98%</span>
+                        </div>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar-fill" data-width="98"></div>
+                        </div>
+                    </div>
+                    <div class="progress-skill">
+                        <div class="skill-info">
+                            <span>API Integration</span>
+                            <span class="skill-percent">90%</span>
+                        </div>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar-fill" data-width="90"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- شبكة المهارات الأساسية -->
+        <div class="skills-grid">
+            <h3 class="skills-subtitle">Technologies & Tools</h3>
+            <div class="row mt-4 g-4 justify-content-center" id="skills-container">
+                <!-- Angular -->
+                <div class="col-6 col-md-3 col-lg-2">
+                    <div class="skill-card" data-skill="angular">
+                        <div class="skill-icon-wrapper">
+                            <i class="fab fa-angular"></i>
+                            <div class="skill-icon-glow"></div>
+                        </div>
+                        <h4>Angular</h4>
+                        <div class="skill-level">
+                            <div class="skill-level-fill" style="width: 85%"></div>
+                        </div>
+                        <span class="skill-percentage">85%</span>
+                    </div>
+                </div>
+
+                <!-- HTML5 -->
+                <div class="col-6 col-md-3 col-lg-2">
+                    <div class="skill-card" data-skill="html">
+                        <div class="skill-icon-wrapper">
+                            <i class="fab fa-html5"></i>
+                            <div class="skill-icon-glow"></div>
+                        </div>
+                        <h4>HTML5</h4>
+                        <div class="skill-level">
+                            <div class="skill-level-fill" style="width: 98%"></div>
+                        </div>
+                        <span class="skill-percentage">98%</span>
+                    </div>
+                </div>
+
+                <!-- JavaScript -->
+                <div class="col-6 col-md-3 col-lg-2">
+                    <div class="skill-card" data-skill="js">
+                        <div class="skill-icon-wrapper">
+                            <i class="fab fa-js"></i>
+                            <div class="skill-icon-glow"></div>
+                        </div>
+                        <h4>JavaScript</h4>
+                        <div class="skill-level">
+                            <div class="skill-level-fill" style="width: 90%"></div>
+                        </div>
+                        <span class="skill-percentage">90%</span>
+                    </div>
+                </div>
+
+                <!-- Bootstrap -->
+                <div class="col-6 col-md-3 col-lg-2">
+                    <div class="skill-card" data-skill="bootstrap">
+                        <div class="skill-icon-wrapper">
+                            <i class="fab fa-bootstrap"></i>
+                            <div class="skill-icon-glow"></div>
+                        </div>
+                        <h4>Bootstrap</h4>
+                        <div class="skill-level">
+                            <div class="skill-level-fill" style="width: 92%"></div>
+                        </div>
+                        <span class="skill-percentage">92%</span>
+                    </div>
+                </div>
+
+                <!-- CSS3 -->
+                <div class="col-6 col-md-3 col-lg-2">
+                    <div class="skill-card" data-skill="css">
+                        <div class="skill-icon-wrapper">
+                            <i class="fab fa-css3-alt"></i>
+                            <div class="skill-icon-glow"></div>
+                        </div>
+                        <h4>CSS3</h4>
+                        <div class="skill-level">
+                            <div class="skill-level-fill" style="width: 95%"></div>
+                        </div>
+                        <span class="skill-percentage">95%</span>
+                    </div>
+                </div>
+
+                <!-- Git -->
+                <div class="col-6 col-md-3 col-lg-2">
+                    <div class="skill-card" data-skill="git">
+                        <div class="skill-icon-wrapper">
+                            <i class="fab fa-git-alt"></i>
+                            <div class="skill-icon-glow"></div>
+                        </div>
+                        <h4>Git</h4>
+                        <div class="skill-level">
+                            <div class="skill-level-fill" style="width: 88%"></div>
+                        </div>
+                        <span class="skill-percentage">88%</span>
+                    </div>
+                </div>
+
+                <!-- Sass -->
+                <div class="col-6 col-md-3 col-lg-2">
+                    <div class="skill-card" data-skill="sass">
+                        <div class="skill-icon-wrapper">
+                            <i class="fab fa-sass"></i>
+                            <div class="skill-icon-glow"></div>
+                        </div>
+                        <h4>Sass</h4>
+                        <div class="skill-level">
+                            <div class="skill-level-fill" style="width: 87%"></div>
+                        </div>
+                        <span class="skill-percentage">87%</span>
+                    </div>
+                </div>
+
+                <!-- Tailwind -->
+                <div class="col-6 col-md-3 col-lg-2">
+                    <div class="skill-card" data-skill="tailwind">
+                        <div class="skill-icon-wrapper">
+                            <i class="fa-brands fa-tailwind-css"></i>
+                            <div class="skill-icon-glow"></div>
+                        </div>
+                        <h4>Tailwind</h4>
+                        <div class="skill-level">
+                            <div class="skill-level-fill" style="width: 89%"></div>
+                        </div>
+                        <span class="skill-percentage">89%</span>
+                    </div>
+                </div>
+
+                <!-- Figma -->
+                <div class="col-6 col-md-3 col-lg-2">
+                    <div class="skill-card" data-skill="figma">
+                        <div class="skill-icon-wrapper">
+                            <i class="fab fa-figma"></i>
+                            <div class="skill-icon-glow"></div>
+                        </div>
+                        <h4>Figma</h4>
+                        <div class="skill-level">
+                            <div class="skill-level-fill" style="width: 82%"></div>
+                        </div>
+                        <span class="skill-percentage">82%</span>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </section>
@@ -168,7 +445,21 @@
 
         <div class="row mt-5">
 
-            <!-- Weather App -->
+            <!-- e-commerce App -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="work-card">
+                    <img src="images/e-commerce.jpg" class="work-img" alt="e-commerce Application">
+                    <div class="work-info">
+                        <h4>e-commerce Application</h4>
+                        <p>A modern e-commerce platform with a focus on user experience and seamless shopping functionality.</p>
+                        <a href="https://e-commerce-tptn.vercel.app/" target="_blank">
+                            Live Demo <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+              <!-- Weather App -->
             <div class="col-lg-4 col-md-6 mb-4">
                 <div class="work-card">
                     <img src="images/pexels-viktor-svabik-1268767731-24739822.jpg" class="work-img" alt="Weather Application">
@@ -196,55 +487,50 @@
                 </div>
             </div>
 
-            <!-- Daniels Portfolio -->
-            <div class="col-lg-4 col-md-6 mb-4">
-                <div class="work-card">
-                    <img src="images/bg.jpg" class="work-img" alt="Portfolio Design">
-                    <div class="work-info">
-                        <h4>Daniels Portfolio</h4>
-                        <p>Modern animated portfolio with smooth transitions and engaging visual elements.</p>
-                        <a href="https://yousefkhalifa284.github.io/daniels/" target="_blank">
-                            Live Demo <i class="fas fa-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
+
 
         </div>
     </div>
 </section>
 
 
-
 <!-- Contact -->
 <section id="contact" class="section">
     <div class="container text-center">
-        <h2 class="section-title">Contact Me</h2>
-        <p class="section-desc">Let's discuss your next project and create something amazing together.</p>
+        <h2 class="section-title" data-aos="fade-up">Contact Me</h2>
+        <p class="section-desc" data-aos="fade-up" data-aos-delay="100">
+            Let's discuss your next project and create something amazing together.
+        </p>
 
         <div class="row mt-5 justify-content-center">
-            <div class="col-md-5 mb-4">
+            <div class="col-md-5 mb-4" data-aos="fade-right" data-aos-delay="200">
                 <div class="contact-box">
-                    <i class="fas fa-envelope"></i>
+                    <i class="fas fa-envelope-open-text"></i>
                     <h4>Email</h4>
-                    <p>yousefkhalifa284@gmail.com</p>
-                    <a href="mailto:yousefkhalifa284@gmail.com" class="btn btn-outline-primary mt-3">Send Email</a>
+                    <p style="color: var(--text-light);">yousefkhalifa284@gmail.com</p>
+                    <a href="mailto:yousefkhalifa284@gmail.com" class="btn btn-outline-primary mt-3 w-100 rounded-pill">
+                        Send Message
+                    </a>
                 </div>
             </div>
 
-            <div class="col-md-5 mb-4">
+            <div class="col-md-5 mb-4" data-aos="fade-left" data-aos-delay="300">
                 <div class="contact-box">
-                    <i class="fas fa-phone"></i>
+                    <i class="fas fa-phone-volume"></i>
                     <h4>Phone</h4>
-                    <p>01027233221</p>
-                    <a href="tel:+966551234567" class="btn btn-outline-primary mt-3">Call Now</a>
+                    <p style="color: var(--text-light);">+20 102 723 3221</p>
+                    <a href="tel:+201027233221" class="btn btn-outline-primary mt-3 w-100 rounded-pill">
+                        Call Now
+                    </a>
                 </div>
             </div>
         </div>
 
-        <a href="mailto:yousefkhalifa284@gmail.com" class="btn btn-primary mt-5 px-5 py-3">
-            <i class="fas fa-rocket me-2"></i>Start Your Project
-        </a>
+        <div class="mt-5" data-aos="zoom-in" data-aos-delay="400">
+            <a href="mailto:yousefkhalifa284@gmail.com" class="btn btn-start-project">
+                <i class="fas fa-rocket me-2"></i>Start Your Project
+            </a>
+        </div>
     </div>
 </section>
 
@@ -256,7 +542,7 @@
             <a href="https://www.linkedin.com/in/yousef-khalifa-284" target="_blank"><i class="fab fa-linkedin-in"></i></a>
             <a href="https://github.com/yousefkhalifa284" target="_blank"><i class="fab fa-github"></i></a>
             <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
-            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.instagram.com/yousef_a_khalifa/?hl=ar" target="_blank"><i class="fab fa-instagram"></i></a>
         </div>
     </div>
 </footer>
